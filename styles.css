@@ -6,70 +6,118 @@ html,body {
     font-weight: 800;
     color: hsl(193, 38%, 86%);  
     font-family: 'Manrope', sans-serif;
+    box-sizing: border-box;
     }
 * {
     --primary-1: hsl(193, 38%, 86%);
     --primary-2: hsl(150, 100%, 66%);
-  
     
 }
 
+
+.attribution {
+    margin-top: 80px;
+}
 .advice-wrapper {
     background-color:hsl(218, 23%, 16%);
     height:100%;
     display:flex;
     position:absolute;
     align-items: center;
+    justify-content: center;
     flex-direction: column;
     width:100vw;
 }
 
+#advice-number{
+    color:hsl(150, 100%, 66%);
+    letter-spacing: 4px;
+    margin:0px;
+    padding-top: 26px;
+    padding-bottom: 7px;
+    font-size:12px;
+    
+}
+#advice {
+    margin:0px 10%;
+    padding:0px;
+    font-size: 1.75em;
+    padding-bottom: 22px;
+    
+}
+.advice-container {
+   
+    background-color: hsl(217, 19%, 24%);
+    
+    display:flex;
+    align-items: center;
+    width: 40%;
+    flex-direction: column;
+    border-radius:3%;
+}
+.die-container {
+    border-radius: 50%;
+    width:60px;
+    height:60px;
+    background-color: hsl(150, 100%, 66%);
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: flex-end;
+    position:relative;
+    top:29px;
 
-@media screen and (max-width:376px) {
+}
+
+.advice-divider-images {
+width: 80%;
+}
+#advice-divider {
+    width:100%; 
+ 
+ 
+}
+
+
+@media (max-width:375px) {
     .attribution {
         padding: 0;
         margin:0;
         position:absolute;
         top:80%;
+        left: 50%;
+        transform: translateX(-50%);
     }
-    
+    .advice-wrapper {
+        display:block;
+        margin:auto;
+    }
+    /*
     .die-container {
-        border-radius: 50%;
-        width:60px;
-        height:60px;
-        background-color: hsl(150, 100%, 66%);
-        display:flex;
-        align-items: center;
-        justify-content: center;
-        position:absolute;
-        top:91.5%;
+        top: 33px;
     }
+   */
     #advice-number{
         color:hsl(150, 100%, 66%);
         letter-spacing: 4px;
-        margin-top: 48px;
+        
         font-size:12px;
+        margin:0px;
+      
         
     }
-    #advice {
-        padding: 0px;
-        margin:0px;
-        font-size: 28px;
-        margin-top:10px;
-        padding-bottom:20px;
-       
-    }
+   
     .advice-container {
-       
         background-color: hsl(217, 19%, 24%);
         position:relative;
         top: 18%;
-        height:46%;
         display:flex;
         align-items: center;
         width: 90%;
         flex-direction: column;
         border-radius:3%;
+        margin:auto;
     }
+    
 }
 
