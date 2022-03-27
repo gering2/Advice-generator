@@ -10,7 +10,7 @@ const generateAdvice = () => {
         }
     })
     .then((data) => {
-        document.getElementById('inner-advice').textContent = data.slip.advice;
+        document.getElementById('outer-advice').textContent = `"${data.slip.advice}"`;
         document.getElementById('advice-number').textContent = data.slip.id;
     })
     .catch((error) => console.log(error))

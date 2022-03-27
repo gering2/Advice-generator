@@ -45,6 +45,15 @@ html,body {
     padding:0px;
     font-size: 1.75em;
     padding-bottom: 24px;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left:100%;
+    }
+   
 }
 .advice-inner-container {
    
@@ -72,6 +81,10 @@ html,body {
     top:29px;
     z-index:3;
 
+}
+
+.die-container:hover {
+    background-color:hsl(150, 66%, 55%); ;
 }
 
 .advice-divider-images {
